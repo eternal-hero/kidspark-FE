@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* ======================================================
+	date pick
+====================================================== */
+.form_txt_01.date_pic_txt {
+	margin: 0 0 4em;
+}
+.date_pick_box {
+	font-size: 2rem;
+	font-weight: bold;
+	padding: 15px 15px;
+	line-height: 1;
+	background-color: #F2F0EE;
+	display: flex;
+	justify-content: center;
+}
+.date_pick_box .txt {
+	margin: 0 20px;
+}
+.date_pick_box .prev,
+.date_pick_box .next {
+	height: 20px;
+	width: 20px;
+	position: relative;
+	cursor: pointer;
+	border: none;
+}
+.date_pick_box .prev::after ,
+.date_pick_box .next::after {
+	content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-color: #464646;
+    border-style: solid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.date_pick_box .prev::after {
+	border-width: 0 0 3px 3px;
+	-webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+	transform-origin: right;
+}
+.date_pick_box .next::after {
+	border-width: 3px 3px 0 0;
+	-webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+	transform-origin: right;
+}
+.date_pick_ttl {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #5BC0DE;
+	text-align: center;
+	padding: 10px 0;
+}
+.date_pick_arrow {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	font-weight: bold;
+	width: 135px;
+	height: 70px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 13px;
+	margin-bottom: 25px;
+	background: url(../img/newuser/registration/date_pick/icn_date_pick.png) no-repeat center;
+}
+@media screen and (max-width: 800px) {
+	.form_txt_01.date_pic_txt {
+		margin: 0 0 3em;
+	}
+	.date_pick_ttl {
+		font-size: 1.6rem;
+	}
+}
+
+/* ======================================================
+	day pick table
+====================================================== */
+.date_pick_table {
+	width: 100%;
+	table-layout: fixed;
+	margin-bottom: 40px;
+}
+.date_pick_table .thead {
+	display: flex;
+}
+.date_pick_table .thead > p  {
+	width: calc(100% / 7);
+	text-align: center;
+	padding: 8px;
+	background-color: #F2F0EE;
+	border: solid 1px #E0E1E3;
+	border-right: none;
+	box-sizing: border-box;
+}
+.date_pick_table .thead > p:last-of-type {
+	border-right: solid 1px #E0E1E3;
+}
+.date_pick_table .thead > p.sun {
+	background-color: #F6D5D0;
+}
+.date_pick_table .thead > p.sat {
+	background-color: #BBE5F1;
+}
+.date_pick_table .tbody {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.date_pick_table .tbody .tbody_item {
+	width: calc(100% / 7);
+	padding: 5px 10px 11px 10px;
+	border-left: solid 1px #E0E1E3;
+	border-bottom: solid 1px #E0E1E3;
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.date_pick_table .tbody .tbody_item:nth-of-type(7n) {
+	border-right: solid 1px #E0E1E3;
+}
+.date_pick_table .tbody .tbody_item.select {
+	background-color: #F6CF5A;
+}
+.date_pick_table .tbody .tbody_item .pick_btn {
+	width: 38px;
+	height: 38px;
+	border: 1px solid #F2F0EE;
+	border-radius: 4px;
+	margin: 5px auto 0;
+	cursor: pointer;
+}
+.date_pick_table .tbody .tbody_item .pick_btn.circle {
+	background: url(/assets/img/newuser/registration/date_pick/icn_circle.png) no-repeat center;
+	background-color: #fff;
+}
+.date_pick_table .tbody .tbody_item .pick_btn.triangle {
+	background: url(/assets/img/newuser/registration/date_pick/icn_triangle.png) no-repeat center;
+	background-color: #fff;
+}
+.date_pick_table .tbody .tbody_item .pick_btn.cross {
+	background: url(/assets/img/newuser/registration/date_pick/icn_cross.png) no-repeat center;
+	background-color: #fff;
+}
+
+.date_pick_table.time_pick {
+	margin-bottom: 45px;
+}
+.date_pick_table.time_pick .tbody {
+	border-top: 1px solid #F2F0EE;
+}
+@media screen and (max-width: 800px) {
+	.date_pick_table {
+		margin-bottom: 20px;
+	}
+	.date_pick_table .thead > p {
+		padding: 3px 8px 2px 8px;
+		font-size: 1.3rem;
+	}
+	.date_pick_table.day_pick .tbody .tbody_item {
+		padding: 5px;
+	}
+	.date_pick_table.day_pick .tbody .tbody_item .pick_btn {
+		width: min(9vw,38px);
+		height: min(9vw,38px);
+	}
+	.date_pick_table.time_pick .tbody .tbody_item {
+		width: calc(100% / 4);
+	}
+	.date_pick_table.time_pick .tbody .tbody_item:nth-of-type(4n) {
+		border-right: solid 1px #E0E1E3;
+	}
+	.date_pick_table.time_pick .tbody .tbody_item:nth-of-type(7n) {
+		border-right: none;
+	}
+	.date_pick_table.time_pick .tbody .tbody_item p {
+		font-size: 1.3rem;
+	}
+	.date_pick_table.time_pick .tbody .tbody_item .pick_btn {
+		margin: 0 auto 0;
+	}
+}

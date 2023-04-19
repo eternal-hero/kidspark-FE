@@ -1,0 +1,153 @@
+<template>
+  <main id="page-U018-2" class="wrapper">
+    <div class="breadcrumb">
+      <div class="inner">
+        <a href="../">マイページ</a><a href="/">予約管理</a><span class="current">予約リクエスト作成(事前面談)</span>
+      </div>
+    </div>
+    <section class="sec-job">
+      <div class="inner">
+        <h1 class="c-ttl__01 pc">予約詳細</h1>
+        <div class="l-content__02 pd-0--sp">
+          <div class="l-content__02-l">
+            <div class="c-caution--l job-box mbsp-20">
+              <h2 class="c-caution__title c-ttl__02--check c-fc--or">予約リクエストを確認してください。</h2>
+            </div>
+            <div class="use-request_01">
+              <div class="use-box">
+                <div class="use-box__avatar">
+                  <img src="~/assets/guardian/img/U018/img_use.png" alt="">
+                </div>
+                <div class="use-box__ct">
+                  <div class="use-box__ttl">
+                    <div class="use-box__address">
+                      <span>30代女性　</span>
+                      <img src="~/assets/guardian/img/common/icn_gps.svg" alt="" width="11">
+                      <div class="use-box__address-desc">東京都中央区</div>
+                    </div>
+                  </div>
+                  <div class="user-status">
+                    <div class="user-status__medal">
+                      <span class="user-status__medal--regular"></span>
+                    </div>
+                    <div class="use-box__star">
+                      <span class="use-box__star-icn" data-rate="3.5"></span>
+                    </div>
+                    <a href="./U058.html" class="user-status__num">(15)</a>
+                  </div>
+                  <span class="icn_coupon">内閣府割引券対象</span>
+                </div>
+              </div>
+              <ul class="sidebar-tags">
+                <li class="sidebar-tags__item active"><span>ベビーシッター</span></li>
+                <li class="sidebar-tags__item active"><span>家事代行</span></li>
+              </ul>
+              <dl class="possible_list">
+                <dt>保育可能年齢</dt>
+                <dd>0歳6ヶ月以上</dd>
+                <dt>保育可能人数</dt>
+                <dd>〜3人</dd>
+                <dt>最低依頼時間</dt>
+                <dd>1時間</dd>
+              </dl>
+            </div>
+            <div class="job-money">
+              <h3 class="job-money__ttl"><img src="~/assets/guardian/img/common/icon-yen.svg" alt="予定合計金額" width="17"> 予定合計金額</h3>
+              <div class="job-money__list">
+                <div class="job-money__list-item">
+                  <div class="job-money__list-ttl">基本料金</div>
+                  <div class="job-money__list-desc">1200円（1200円×1時間）</div>
+                </div>
+                <div class="job-money__list-item">
+                  <div class="job-money__list-ttl"> 手数料 <span>（保険料・消費税込み）</span>
+                    <div class="statuschips tooltip">
+                      <span></span>
+                      <p class="tooltip__txt">
+                        手数料には保険料と消費税が含まれます。<a href='https://www.kids-parks.com/faq/commission-2/187/' target='_blank'>手数料についてはこちら</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="job-money__list-desc"><span class="c-fw--bd">0円</span></div>
+                </div>
+                <div class="job-money__list-item job-money__list-item--price">
+                  <div class="job-money__list-ttl">合計</div>
+                  <div class="job-money__list-desc">
+                    <span>1,200</span>円
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-txt__04">上記は予想金額となります。予約リクエスト送信後、ユーザーからお見積もりが届きますので、そちらの価格を確認してください。</div>
+            <div class="job-infor">
+              <div class="job-infor__list">
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">依頼カテゴリー</div>
+                  <div class="job-infor__list-desc">ベビーシッター</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">予約内容</div>
+                  <div class="job-infor__list-desc">WEB事前面談（初回必須）</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">予約希望日</div>
+                  <div class="job-infor__list-desc">2022年07月20日(水)</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">開始</div>
+                  <div class="job-infor__list-desc">2022年07月20日(水) 12:00</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">終了</div>
+                  <div class="job-infor__list-desc">2022年07月20日(水) 13:00</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">面談場所</div>
+                  <div class="job-infor__list-desc">その他<br>住所：東京都渋谷000 〇〇カフェ<br>最寄り駅：山手線 秋葉原駅<br>最寄り駅までの交通手段：徒歩<br>最寄り駅までの所要時間：10分<br>面談場所までの行き方：駅からまっすぐ</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">面談するお子様</div>
+                  <div class="job-infor__list-desc">さなちゃん（女の子/3歳2ヶ月）</div>
+                </div>
+                <div class="job-infor__list-item">
+                  <div class="job-infor__list-ttl">面談で聞きたいことなど</div>
+                  <div class="job-infor__list-desc">いままでの保育のご経験など聞ければ嬉しいです。</div>
+                </div>
+              </div>
+            </div>
+            <div class="request-note">
+              <h3 class="c-ttl__02 mbpc-10">登録内容の公開範囲について</h3>
+              <p class="c-txt__01">基本情報の内容は一般公開はされません。登録内容の公開範囲は予約確定前と後などでパークサポーターへ公開される内容が異なります。<a href="https://www.kids-parks.com/faq/profile-2/164/" class="txt-link" target="_blank">詳しくはこちら</a>をご覧ください。<br>
+              </p>
+            </div>
+            <div class="c-control--submit mw-500">
+              <NuxtLink to="/guardian/reservation-detail/booking-detail/create-a-reservation-request" class="btn_back w155 w100-sp">もどる</NuxtLink>
+              <NuxtLink to="/guardian/reservation-detail/booking-detail/pre-interview-request" class="btn_entry">リクエストを送信する</NuxtLink>
+            </div>
+          </div>
+          <aside class="l-content__02-r">
+            <guardian-right-menu :useUserInfo="false" step-active="1" />
+            <div class="questions-box">
+              <h3 class="questions-box__ttl">
+                <img src="~/assets/guardian/img/common/questions-icon.svg" alt="icon" width="26"> よくある質問
+              </h3>
+              <ul class="questions-box__list">
+                <li class="questions-box__list-item"><a href="https://www.kids-parks.com/faq/request/177/" target="_blank">予約リクエストの作成方法</a></li>
+                <li class="questions-box__list-item"><a href="https://www.kids-parks.com/faq/request-2/180/" target="_blank">予約リクエストの内容変更、依頼取り消しについて</a></li>
+                <li class="questions-box__list-item"><a href="https://www.kids-parks.com/faq/flow-2/183/" target="_blank">サポート開始までの流れ</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+</template>
+<script>
+
+import GuardianRightMenu from "@/components/block/GuardianRightMenu.vue";
+
+export default {
+  components: { GuardianRightMenu },
+  layout: 'guardian',
+}
+</script>

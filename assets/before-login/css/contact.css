@@ -1,0 +1,151 @@
+@charset "utf-8";
+.wrapper {
+    overflow: hidden;
+}
+.txt_01 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+}
+
+.search_block {
+	background-color: #fff;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+}
+.search_inr {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.search_block_ttl {
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.search_keyword {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.search_keyword {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search_keyword .btn_style_03 {
+    min-width: auto;
+    height: auto;
+    padding: 4px 11px;
+    font-size: 1.4rem;
+    border-radius: 19px;
+    font-weight: 300;
+    width: auto;
+}
+.search_block_form {
+    display: flex;
+    margin-bottom: 20px;
+}
+.search_block_form button[type=submit] {
+    width: 154px;
+    border-radius:0 5px 5px 0;
+}
+
+.contact_block {
+	background-color: #fff;
+    padding: 25px 20px 40px;
+}
+.contact_block .search_inr {
+    max-width: 780px;
+    margin: 0 auto;
+}
+.table_style_01 {
+    margin-bottom: 20px;
+}
+.table_style_01 th {
+    vertical-align: top;
+}
+.table_style_01 tbody th::after {
+    content: "※";
+    color: #F04850;
+}
+.table_style_01 td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.contact_block textarea {
+    height: 170px;
+}
+.contact_block .form_part_select {
+    width: 200px;
+}
+.contact_block thead th {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.contact_block .btn_style_01:disabled {
+    background-color: #ADE0EF;
+    cursor: initial;
+}
+.contact_block .btn_area {
+    max-width: 314px;
+    margin: 0 auto;
+}
+.contact_note {
+    background-color: #E6F6FA;
+    padding: 27px 30px;
+    margin: 30px 0;
+}
+
+@media screen and (min-width: 801px) {}
+@media screen and (max-width: 800px) {
+    .txt_01 {
+        font-size: 1.3rem;
+    }
+    .search_block .txt_01 {
+        margin-bottom: 10px;
+    }
+    .search_block_ttl {
+        font-size: 1.8rem;
+    }
+    .search_block {
+        padding: 27px 3vw;
+        margin-bottom: 25px;
+    }
+    .search_block_form {
+        margin-bottom: 15px;
+    }
+    .search_keyword {
+        gap: 10px;
+    }
+    .search_keyword .btn_style_03 {
+        padding: 4px 10px;
+        font-size: 1.3rem;
+    }
+    .table_style_01 tbody th ,
+    .table_style_01 tbody td {
+        display: block;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+    .contact_block {
+        padding: 20px 5vw;
+        margin: 0 -5vw;
+    }
+    .table_style_01 thead th {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .table_style_01 tbody th {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    .contact_block .form_part_select {
+        width: 100%;
+    }
+    .contact_note {
+        padding: 20px;
+    }
+}

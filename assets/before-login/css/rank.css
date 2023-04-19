@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+body, .wrapper {
+	background-color: #fff;
+}
+.wrapper {
+	padding-bottom: 50px;
+}
+.rank_table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 10px;
+	table-layout: fixed; 
+}
+.txt_01 {
+	font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+	margin-bottom: 34px;
+}
+.rank_table tr td:first-of-type {
+	width: 135px;
+}
+
+.rank_table thead td {
+	vertical-align: bottom;
+}
+
+.rank_table tbody th ,
+.rank_table tbody td {
+	vertical-align: middle;
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 10px 10px;
+	line-height: 1.3;
+	height: 56px;
+	box-sizing: border-box;
+}
+
+.rank_table tbody th {
+	background-color: #F2F0EE;
+	font-weight: bold;
+}
+
+.rank_table tbody td:first-of-type {
+	background-color: #E2F3F6;
+}
+
+.rank_table tbody td:nth-of-type(2) {
+	background-color: #F4E0D3;
+}
+
+.rank_table tbody td:nth-of-type(3) {
+	background-color: #F4F4F4;
+}
+
+.rank_table tbody td:last-of-type {
+	background-color: #FCF8D5;
+}
+
+.rank_table tbody td .star {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rank_table tbody tr.profile td  {
+	text-align: left;
+}
+
+.rank_icn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.rank_icn img {
+	width: 48px;
+}
+
+.rank_icn.rank_icn--gold img {
+	width: 90px;
+}
+
+.rank_name {
+	font-size: 1.45rem;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.rank_name span {
+	display: block;
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #969696;
+}
+
+.rank_table thead .regular {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	background-color: #71C7D5;
+}
+
+.rank_table thead .regular span {
+	display: block;
+	width: 80%;
+	font-weight: bold;
+	font-size: min(1.5vw,1.6rem);
+	padding: 2.5px 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.rank_table thead .bronze {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	background-color: #C96623;
+}
+
+.rank_table thead .silver {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	background-color: #CCCCCC;
+}
+
+.rank_table thead .gold {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	background-color: #F2DF2F;
+}
+
+.rank_table thead .gold span {
+	display: block;
+	width: 80%;
+	font-weight: bold;
+	font-size: min(1.5vw,1.6rem);
+	padding: 2.5px 10px;
+	background: url(../img/rank/bg_gold.png) no-repeat center;
+	background-size: 95%;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+}
+.rank_explain {
+	overflow: hidden;
+}
+.rank_explain .inr {
+	padding-top: 0;
+}
+
+.rank_explain_box {
+padding-bottom: 65px;
+}
+
+.rank_explain_img{
+	padding-top: 25px;
+	text-align: center;
+}
+.rank_explain_img.gray{
+	background-color: #FAFAFA;
+}
+.rank_system {
+	margin-bottom: 55px;
+}
+.rank_system .rank_explain_img {
+	margin-top: 25px;
+}
+.rank_explain_img img {
+	width: auto;
+}
+
+.rank_explain_ttl {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.rank_explain_note {
+	padding-top: 40px;
+}
+
+@media screen and (min-width: 801px) {
+	.rank_sp {
+		display: none;
+	}
+}
+@media screen and (max-width: 800px) {
+	.rank_sp {
+		margin-bottom: 65px;
+	}
+	.rank_sp_list {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 20px;
+	}
+	.rank_sp_list li {
+		flex: 1;
+	}
+	.rank_sp_list .regular {
+		height: 50px;
+		background-color: #71C7D5;
+	}
+	
+	.rank_sp_list .bronze {
+		height: 100px;
+		background-color: #C96623;
+	}
+	
+	.rank_sp_list .silver {
+		height: 150px;
+		background-color: #CCCCCC;
+	}
+	
+	.rank_sp_list .gold {
+		height: 200px;
+		background-color: #F2DF2F;
+	}
+	
+	.rank_sp_list .gold .gold_txt {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		width: 100%;
+		font-size: min(1.5vw,1.6rem);
+		padding: 2.5px 10px;
+		background: url(../img/rank/bg_gold_sp.png) no-repeat center;
+		background-size: 90%;
+		background-color: #fff;
+		border-radius: 10px;
+		text-align: center;
+		flex: 1;
+		-ms-writing-mode: tb-rl;
+		writing-mode: vertical-rl;
+		box-sizing: border-box;
+	}
+
+	.rank_name {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+		font-size: min(4.5vw,1.45rem);
+	}
+
+	.rank_sp_list .rank_name span {
+		color: #464646;
+		font-size: min(2.5vw,1.3rem);
+	}
+
+	.rank_name.rank_name--sp {
+		padding: 0;
+	}
+
+	.rank_sp_dl {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.rank_sp_dl dt {
+		width: 90px;
+		background-color: #F2F0EE;
+		padding: 10px 5px;
+		box-sizing: border-box;
+	}
+
+	.rank_sp_dl dd {
+		width: calc(100% - 100px);
+		padding: 10px;
+		background-color: #E2F3F6;
+		box-sizing: border-box;
+	}
+
+	.rank_sp_dl dd.bronze {
+		background-color: #F4E0D3;
+	}
+
+	.rank_sp_dl dd.silver {
+		background-color: #F4F4F4;
+	}
+
+	.rank_sp_dl dd.gold {
+		background-color: #FCF8D5;
+	}
+	.user_star_icn {
+		height: 20px;
+	}
+	.rank_sp .star {
+		display: flex;
+		align-items: center;
+	}
+
+	.rank_sp .star {
+		display: flex;
+		align-items: center;
+	}
+
+	.rank_sp .user_star {
+		width: 120px;
+		margin-bottom: 10px;
+	}
+	.user_star_icn:before, .user_star_icn:after {
+		height: 20px;
+	}
+	.rank_system {
+		margin-bottom: 20px;
+
+	}
+	.rank_explain_img  {
+		margin-left: -5vw;
+		margin-right: -5vw;
+		padding: 10px 5vw;
+	}
+}
+

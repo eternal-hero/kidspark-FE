@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNXXNBJ');</script>
+<!-- End Google Tag Manager -->
+
+<?php #meta ?>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title><?php echo $site_title ?>｜<?php echo $page_title ?></title>
+<meta name="description" content="<?php echo $page_description ?>">
+<meta name="keywords" content="<?php echo $page_keywords ?>">
+
+<meta content="Kids Park【キッズパーク】キッズパークなら安心安全な信頼できるシッターが見つかります!" property="og:title" />
+<meta content="article" property="og:type" />
+<meta content="https://www.kids-parks.com/assets/img//top/icn_logo.svg" property="og:image" />
+<meta content="https://www.kids-parks.com/" property="og:url" />
+<meta content="Kids Park【キッズパーク】" property="og:site_name" />
+<meta content="キッズパークはベビーシッター育成から、きめ細やかな面談及び研修を行った保護者さまが安心してご利用いただけるシッターのみ登録しています。" property="og:description" />
+
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="icon" href="/favicon.ico">
+
+<?php #stylesheet ?>
+<link href="<?php echo $css_folder ?>reset.css?<?php echo time(); ?>" rel="stylesheet">
+<link href="<?php echo $css_folder ?>slick.css?<?php echo time(); ?>" rel="stylesheet">
+<link href="<?php echo $css_folder ?>common.css?<?php echo time(); ?>" rel="stylesheet">

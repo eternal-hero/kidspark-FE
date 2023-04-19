@@ -1,0 +1,30 @@
+@function vw( $size: 16 ) {
+    $vw: $size * (100 / $break_point-m) + vw;
+    @return $vw;
+}
+@function svw( $size: 10 ) {
+  $svw: $size / $break_point * 100 + vw;
+  @return $svw;
+}
+
+@mixin conversion-vw($style:false,$px: 10) {
+  #{$style}: svw($px);
+}
+
+@function svw2( $size: 10 ) {
+  @if $size == 0 {
+    @return 0;
+  }@else{
+    @return calc( #{$size} / #{$break_point} * 100vw );
+  }
+}
+
+@mixin conversionMargin-vw($style:false,$top: 0,$right: 0,$bottom: 0,$left: 0) {
+
+  @if $right == "auto" and $right == "auto"{
+    #{$style}: svw2($top) auto svw2($bottom);
+  }@else{
+    #{$style}: svw2($top) svw2($right) svw2($bottom) svw2($left);
+  }
+
+}

@@ -1,0 +1,13 @@
+@mixin flex($justify: center,$align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex_item($type: "equal",$num:1,$margin:0px) {
+    @if $type == "equal" {
+        flex: 1 1 auto;
+    }@else{
+        flex: $num 1 auto;
+    }
+    margin: 0 $margin;
+}

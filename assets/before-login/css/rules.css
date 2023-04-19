@@ -1,0 +1,99 @@
+@charset "utf-8";
+.wrapper {
+    background-color: #fff;
+}
+.rules {
+    counter-reset: number 0; 
+}
+.txt_01 {
+	font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.rules_list li {
+    font-weight: 500;
+    margin-bottom: 48px;
+}
+.rules_list li:last-of-type {
+    margin-bottom: 0px;
+}
+.rules_ttl {
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rules_ttl::before {
+    box-sizing: border-box;
+    counter-increment: number 1;
+    content: "0"counter(number);
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 3px solid #5DB5CE;
+    border-radius: 50%;
+    margin-right: 17px;
+    flex-shrink: 0;
+}
+.prohibited {
+    padding: 90px 0 0;
+}
+.prohibited .txt_01 {
+    margin-bottom: 20px;
+}
+.prohibited_list {
+    font-size: 1.6rem;
+    padding: 30px 30px;
+    font-weight: bold;
+    background-color: #FAFAFA;
+}
+.prohibited_list li {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 10px;
+}
+.prohibited_list li span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+.prohibited_list li::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    margin: 0.2em 8px 0 0;
+    flex-shrink: 0;
+    background: url(../img/common/icn_prohibited.png);
+}
+@media screen and (min-width: 801px) {}
+@media screen and (max-width: 800px) {
+    .wrapper {
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+    .inr {
+        padding-bottom: 0;
+    }
+    .rules_ttl {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .prohibited_list {
+        padding: 30px 5vw 50px;
+        margin: 0 -5vw;
+    }
+    .prohibited_list li {
+        margin-bottom: 10px;
+    }
+    .prohibited_list li span {
+        margin-top: 10px;
+    }
+}

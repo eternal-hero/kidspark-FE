@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<?php #meta ?>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title><?php echo $site_title ?>｜<?php echo $page_title ?></title>
+<meta name="description" content="<?php echo $page_description ?>">
+<meta name="keywords" content="<?php echo $page_keywords ?>">
+<link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="icon" href="/favicon.ico">
+
+<?php #stylesheet ?>
+<link href="<?php echo $css_folder ?>reset.css?<?php echo time(); ?>" rel="stylesheet">
+<link href="<?php echo $css_folder ?>common.css?<?php echo time(); ?>" rel="stylesheet">

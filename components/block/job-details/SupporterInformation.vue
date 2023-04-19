@@ -1,0 +1,45 @@
+<template>
+  <div class="job-infor">
+    <h3 class="job-infor__ttl"><img src="@/assets/supporter/img/common/icon-use.svg" :alt="label" width="17"> {{ label }}</h3>
+    <div class="job-infor__list">
+      <div class="job-infor__list-item">
+        <div class="job-infor__list-ttl">お名前</div>
+        <div class="job-infor__list-desc">
+          <a href="">佐藤　彩</a>
+        </div>
+      </div>
+      <div class="job-infor__list-item">
+        <div class="job-infor__list-ttl">ふりがな</div>
+        <div class="job-infor__list-desc">さとう　あや</div>
+      </div>
+      <div class="job-infor__list-item">
+        <div class="job-infor__list-ttl">電話番号</div>
+        <div class="job-infor__list-desc"><a href="tel:07011112222" class="tel">07011112222</a></div>
+      </div>
+      <div class="job-infor__list-item">
+        <div class="job-infor__list-ttl">住所</div>
+        <div class="job-infor__list-desc"><span>単発予約・定期予約が<br class="sp">確定したら表示されます</span></div>
+      </div>
+      <div class="job-infor__list-item">
+        <div class="job-infor__list-ttl">最寄駅</div>
+        <div class="job-infor__list-desc">〇〇駅</div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "SupporterInformation",
+  props: {
+    label: {
+      type: String,
+      required: true
+    },
+  },
+};
+</script>
+
+<style scoped>
+
+</style>

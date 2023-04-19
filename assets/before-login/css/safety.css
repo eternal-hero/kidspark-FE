@@ -1,0 +1,134 @@
+@charset "utf-8";
+.wrapper {
+    background-color: #fff;
+}
+.safety {
+    counter-reset: number 0; 
+}
+.txt_01 {
+	font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.mv {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding-bottom: 60px;
+}
+.mv::before ,
+.mv::after {
+    content: "";
+    display: block;
+    width: 100px;
+}
+.mv::after {
+    background: url(../img/safety/img_safety_bg.png) no-repeat bottom center;
+}
+.mv::before {
+    background: url(../img/safety/img_safety_bg2.png) no-repeat bottom center;
+}
+.safety_ttl {
+    font-size: 3.5rem;
+    margin:-30px 0 45px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+}
+.mv .num {
+    font-size: 5.5rem;
+}
+.attempt_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.attempt_list li {
+    width: 30%;
+    margin-bottom: 40px;
+}
+.attempt_img {
+    margin-bottom: 30px;
+}
+.attempt_ttl {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+.help {
+    background: #FFF7E2 url(../img/common/bg_img.png) no-repeat;
+    background-size: 393px 289px;
+    background-position: -5px 100%;
+    background-color: #FAFAFA;
+}
+.help_ttl {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.help_box {
+    max-width: 485px;
+    padding-bottom: 20px;
+    margin: 30px auto 0;
+    background-color: #fff;
+}
+.help_img {
+    max-width: 485px;
+    margin-bottom:20px;
+}
+.safety .icn::before{
+    width: 30px;
+    height: 25px;
+}
+@media screen and (min-width: 801px) {}
+@media screen and (max-width: 800px) {
+    .wrapper {
+        padding-bottom: 0;
+    }
+    .txt_01 {
+        font-size: 1.5rem;
+    }
+    .mv {
+        display: block;
+        padding-bottom: 45px;
+    }
+    .mv::after {
+        content: none;
+    }
+    .mv::before {
+        content: none;
+    }
+    .mv .num {
+        font-size: 2.8rem;
+    }
+
+    .safety_ttl {
+        font-size: 2.8rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .safety_ttl::after {
+        content: "";
+        display: block;
+        width: 100%;
+        background: url(../img/safety/img_safety_bg3.png) no-repeat bottom center;
+        background-size: contain;
+        padding-top: 52%;
+        margin-top: 5px;
+    }
+
+    .attempt_list {
+        display: block;
+    }
+    .attempt_list li {
+        width: 100%;
+    }
+    .attempt_img {
+        width: 80%;
+    }
+    .help  {
+        padding: 40px 0 30px;
+        background-size: 200px auto;
+        background-position: 90% 10%;
+    }
+}

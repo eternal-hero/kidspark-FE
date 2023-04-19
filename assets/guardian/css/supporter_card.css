@@ -1,0 +1,179 @@
+#page-U008 .main-header {
+    z-index: 300;
+}
+#page-U008 .smt-hidden {
+    text-decoration: none;
+}
+#page-U008 .sec-myprofile .sidebar-ages__w {
+    display: none;
+}
+#page-U008 .myprofile-box {
+    padding: 43px 0 63px;
+    background: #fff;
+}
+#page-U008 .sec-myprofile .l-content__02 {
+    grid-template-columns: none;
+    gap: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 680px;
+    margin: 0 auto;
+}
+#page-U008 .l-content__02-l {
+    border: 1px solid #E0E1E3;
+    position: relative;
+    width: calc(50% - 10px);
+    max-width: 50%;
+}
+#page-U008 .l-content__02-l:after {
+    content: "";
+    display: block;
+    padding-top: 50px;
+}
+a.supporter-list {
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: 100;
+}
+a.supporter-list:hover {
+    background: #fff;
+    z-index: 100;
+    opacity: 0.5;
+}
+#page-U008 .myprofile-ct {
+    position: initial;
+    padding-left: 0;
+}
+#page-U008 .myprofile-heart {
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+}
+#page-U008 .myprofile-user {
+    margin-top: 0;
+}
+#page-U008 .myprofile-ct .use-box__address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-left: 11px;
+}
+#page-U008 .quote-list__box-price {
+    padding: 10px;
+    background: #E8F7FB;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#page-U008 .sidebar-tags__item.discount {
+    color: #5BC0DE;
+    border: 1px solid #5BC0DE;
+    background: #fff;
+    border-radius: 0;
+    display: block;
+    margin-right: 100%;
+    word-break: keep-all;
+}
+#page-U008 .myprofile-ct .myprofile-comment{
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#page-U008 .myprofile-ct .user-heading {
+    margin-bottom: 2px;
+}
+#page-U008 .myprofile-img {
+    margin-bottom: 10px;
+}
+#page-U008 .c-al--c {
+    margin-bottom: 43px;
+}
+@media screen and (max-width: 800px) {
+    #page-U008 .l-content__02-l {
+        width: calc(50% - 5px);
+        max-width: 50%;
+    }
+    #page-U008 .sec-myprofile .l-content__02 {
+        gap: 20px 10px;
+        width: auto;
+    }
+    #page-U008 .myprofile-box {
+        padding: 30px 0;
+    }
+    #page-U008 .myprofile-box .l-content__02 {
+        padding: 0 ;
+        margin: 0 auto;
+        width: 680px;
+        max-width: 100%;
+    }
+    #page-U008 .sidebar-tags {
+        display: none;
+    }
+    #page-U008 .sec-myprofile .sidebar-ages__w {
+        display: flex;
+        margin-bottom: 0;
+        padding-left: 11px;
+    }
+    #page-U008 .smt-hidden {
+        display: none;
+    }
+    #page-U008 .c-al--c {
+        margin-bottom: 30px;
+    }
+    #page-U008 .sec-myprofile .sidebar-ages__w .sidebar-ages__heading {
+        padding-left: 0;
+    }
+    #page-U008 .sec-myprofile .sidebar-ages__w .sidebar-ages__heading {
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 8px;
+        min-width: 55%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    #page-U008 .sec-myprofile .sidebar-ages__w .sidebar-ages__heading:last-child {
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+    #page-U008 .sec-myprofile .sidebar-ages__w .sidebar-ages__heading:after {
+        content: none;
+    }
+    #page-U008 .myprofile-ct .user-heading {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #page-U008 .sec-myprofile .sidebar-ages__w .sidebar-ages__heading {
+        padding-left: 0;
+    }
+    #page-U008 .myprofile-ct .myprofile-comment{
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+}
+@media screen and (max-width: 480px) {
+    #page-U008 .c-txt__02 {
+        font-size: 1.1rem;
+    }
+    #page-U008 .use-box__address {
+        font-size: 1.1rem;
+    }
+    #page-U008 .myprofile-ct .user-heading .user-status__star > span {
+        width: 80px;
+        height: 16px;
+    }
+    #page-U008 .myprofile-ct .user-heading .user-status__star > span:after {
+        background-size: auto 85%;
+    }
+    #page-U008 .sec-myprofile .sidebar-ages__w .sidebar-ages__heading span:first-child {
+        margin-right: 10px;
+    }
+}

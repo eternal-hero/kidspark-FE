@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+body, .wrapper {
+	background-color: #fff;
+}
+
+
+.company_terms > li {
+	margin-top: 40px;
+}
+
+.company_terms_ttl {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.company_terms p {
+	margin-bottom: 30px;
+}
+
+.company_terms_num {
+	counter-reset: number 0; 
+	margin-bottom: 15px;
+}
+
+.company_terms_indent {
+	padding-left:2em;
+}
+
+.company_terms_num > li {
+	padding-left:2em;
+	text-indent:-2em;
+}
+
+.company_terms_num > li::before {
+	counter-increment: number 1;
+	content: "("counter(number)")";
+	padding-right: .8em;
+}
+
+.note_list li {
+	padding-left:2em;
+	text-indent:-2em;
+}
+
+.note_list li::before {
+	content: "※";
+	margin-right: 1em;
+}
+
+.terms_list {
+	counter-reset: number2 0; 
+}
+.terms_list > li {
+	padding-left:2em;
+	text-indent:-2em;
+}
+
+.terms_list > li::before {
+	counter-increment: number2 1;
+	content: counter(number2) ". ";
+	padding-right: .8em;
+}
+
+@media screen and (min-width: 801px) {}
+@media screen and (max-width: 800px) {
+
+}
+
+/* ===========================
+company
+=========================== */
+.title {
+	display: none;
+}
+.h-title-deco {
+	display: none;
+}
+.table-layout-wp {
+	margin: 40px 0 30px;
+}
+.table-layout-wp dl {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+}
+.table-layout-wp dt {
+	width: 30%;
+	padding: 15px 0;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-top: 1px solid #E0E1E3;
+}
+.table-layout-wp dd {
+	width:80%;
+	padding: 15px 0;
+	box-sizing: border-box;
+	border-top: 1px solid #E0E1E3;
+}
+.table-layout-wp dt:last-of-type dt {
+	border-bottom: 1px solid #E0E1E3;
+}
+.table-layout-wp dt:last-of-type dd {
+	border-bottom: 1px solid #E0E1E3;
+}
+.company_map {
+	position: relative;
+	overflow: hidden;
+
+}
+.company_map::before {
+	content: "";
+	display: block;
+	padding-top: 38%;
+}
+.company_map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+@media screen and (max-width: 800px) {
+	.company_img {
+		margin: 0 -5vw;
+	}
+	.company_map {
+		margin: 0 -5vw;
+	}
+	.company_map::before {
+		padding-top: 55%;
+		min-height: 205px;
+		box-sizing: border-box;
+	}
+	.table-layout-wp dl {
+		display: block;
+	}
+	.table-layout-wp dt {
+		width: 100%;
+		padding: 15px 20px;
+		border-top: none;
+		background-color: #FAFAFA;
+	}
+	.table-layout-wp dd {
+		width:100%;
+		padding: 15px 5px;
+		border-top: none;
+	}
+	.table-layout-wp dt:last-of-type dt ,
+	.table-layout-wp dt:last-of-type dd {
+		border-bottom: none;
+	}
+}
+
+/* ===========================
+privacy
+=========================== */
+.privacy_sign {
+	display: flex ;
+	width: 400px;
+}
+.privacy_sign dt {
+	flex-shrink: 0;
+}
+.privacy_date {
+	text-align: right;
+}
+
+/* ===========================
+cancel
+=========================== */
+.cancel_box {
+	background-color: #FAFAFA;
+	padding: 25px 30px;
+	margin: 50px 0 30px;
+}
+.cancel_box li {
+	line-height: 2.2;
+}
+@media screen and (max-width: 800px) {
+	.cancel_box {
+		padding: 25px 5vw;
+	}
+}

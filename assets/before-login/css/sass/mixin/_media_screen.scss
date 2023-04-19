@@ -1,0 +1,12 @@
+// media screen
+@mixin  media($breakpoint:$break_point-m,$min:true) {
+    @if($min){
+        @media screen and (min-width:#{$breakpoint}px){
+            @content;
+        }
+    }@else{
+        @media screen and (max-width:#{$breakpoint - 1}px){
+            @content;
+        }
+    }
+}

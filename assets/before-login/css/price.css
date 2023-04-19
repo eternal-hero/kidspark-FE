@@ -1,0 +1,135 @@
+@charset "utf-8";
+.wrapper {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+.txt_01 {
+	font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.price_flow {
+    padding-bottom: 65px;
+}
+.price_list {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.price_list li {
+    flex: 1;
+    border: 3px solid #5DB5CE;
+    border-radius: 10px;
+    padding: 15px 15px 25px;
+    position: relative;
+}
+.price_list li::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background:url(../img/price/icn_plus.png) ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -33px;
+}
+.price_list li:last-of-type img {
+    margin-right: -27px;
+}
+.price_list li:last-of-type:before {
+    content: none;
+}
+.price_list_img {
+    height: 110px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price_list_img img {
+    max-height: 100%;
+    width: auto;
+}
+.price_list_ttl {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.price_txt {
+    text-align: center;
+    line-height: 1.7;
+}
+.price_txt span {
+    color: #FF0000;
+    font-weight: 600;
+}
+.credit {
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+.credit .price_txt {
+    margin-bottom: 35px;
+}
+.credit-img {
+    margin-bottom: 35px;
+    text-align: center;
+}
+.cancel {
+    margin-bottom: 90px;
+}
+.cancel .price_txt {
+    margin-bottom: 30px;
+}
+.cancel_list {
+    text-align: left;
+    background-color: #FAFAFA;
+    padding: 30px;
+}
+.cancel_list li {
+    line-height: 2.2;
+}
+@media screen and (min-width: 801px) {}
+@media screen and (max-width: 800px) {
+    .price_flow {
+        padding-bottom: 55px;
+    }
+    .price_list  {
+        flex-direction: column;
+        gap: 55px;
+    }
+    .price_list li::before {
+        top: initial;
+        bottom: -41px;
+        right: initial;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .price_list_ttl {
+        margin-bottom: 15px;
+    }
+    .credit {
+        margin: 0 auto 75px;
+    }
+    .credit .price_txt {
+        margin-bottom: 10px;
+    }
+    .credit-img {
+        margin-bottom: 20px;
+    }
+    .credit-img img {
+        width: 87%;
+    }
+    .cancel {
+        margin-bottom: 85px;
+    }
+    .cancel_list {
+        width: 95%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 30px 5vw;
+    }
+}

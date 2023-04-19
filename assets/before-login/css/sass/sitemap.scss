@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+// セッティング
+@import "setting/variables";
+
+// mixin
+@import "mixin/flex";
+@import "mixin/font";
+@import "mixin/conversion";
+@import "mixin/position";
+@import "mixin/media_screen";
+
+.sitemap {
+    text-align: center;
+}
+.sitemap_list {
+    display: inline-block;
+    padding: 30px 0 60px;
+}
+.sitemap_list li {
+    margin-bottom: 20px;
+}
+.sitemap_ttl {
+    font-size: 2.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.sitemap_ttl::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin:-5px 15px 0 0;
+    background: url(../img/sitemap/ttl_logo.svg);
+}
+.sitemap_ttl:hover::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin:-5px 15px 0 0;
+    background: url(../img/sitemap/ttl_logo.svg);
+    animation-name: icn;
+	animation-delay: 0s;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+@keyframes icn {
+	0% {
+		transform: translateY(0px);
+	}
+
+    50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@media (min-width: 801px) {
+    .sitemap_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .sitemap_list li {
+        width: 48%;
+    }
+    .sitemap_list li a{
+        flex: 1;
+    }
+    .sitemap_ttl {
+        border-bottom: 1px solid #595757;
+    }
+}

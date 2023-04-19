@@ -1,0 +1,31 @@
+// font icon
+@mixin font_style($pixels , $height:false,$l_spece:false) {
+	font-size: #{$pixels  / 10 }rem;
+    @if($height != false){
+	    line-height: $height / $pixels;
+    }
+    @if($l_spece != false){
+        letter-spacing: $l_spece / 1000+em;
+    }
+}
+@mixin font_style_sp($pixels , $height:false,$l_spece:false) {
+    font-size: _get_vw($pixels);
+    font-size: unquote('max(#{$minFontSize},#{_get_vw($pixels)})');
+    @if($height != false){
+	    line-height: $height / $pixels;
+    }
+    @if($l_spece != false){
+        letter-spacing: $l_spece / 1000+em;
+    }
+}
+
+//フォント用のmixin
+@function _get_vw($size) {
+    $rate: 100 / $break_point;
+    @return $rate * $size * 1vw;
+}
+
+@mixin font-vw($font_size: 10, $viewsize: 375) {
+    font-size: $font_size * 1px;
+    font-size: _get_vw($font_size, $viewsize);
+}

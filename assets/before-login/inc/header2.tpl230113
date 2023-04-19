@@ -1,0 +1,68 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNXXNBJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="main-header" class="main-header">
+	<div class="main-header__inner">
+		<a href="./" class="main-header__logo"><img src="/assets/img/common/logo.svg" alt="Kids Park" width="230"></a>
+		<nav class="main-header__navGlobal">
+			<ul class="main-header__menu pc">
+				<li class="main-header__menu-item current"><a href="/about/">キッズパークとは</a></li>
+				<li class="main-header__menu-item"><a href="/flow/">ご利用の流れ</a></li>
+				<li class="main-header__menu-item"><a href="/price/">ご利用料金</a></li>
+				<li class="main-header__menu-item"><a href="/faq/">よくある質問</a></li>
+			</ul>
+			<ul class="main-header__control">
+				<li class="main-header__control-item pc"><a href="/search/" class="btn-release"><i class="fa-solid fa-magnifying-glass"></i>シッターを探す</a></li>
+				<li class="main-header__control-item"><a href="" class="btn-registrations">新規登録</a></li>
+				<li class="main-header__control-item">
+					<button class="js-modal btn-login" data-modal="mainHeaderLogin"><span class="icn icn_login">ログイン</span></button>
+				</li>
+				<li class="main-header__control-item smt">
+					<span class="main-header__mobile-icon">
+						<span class="main-header__mobile-icon-border"></span>
+						<span class="main-header__mobile-icon-border"></span>
+						<span class="main-header__mobile-icon-border"></span>
+					</span>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="user-menu">
+		<nav class="user-menu__nav">
+			<div class="user-menu__nav-item"><a href="/about/">キッズパークとは</a></div>
+			<div class="user-menu__nav-item"><a href="/flow/">ご利用の流れ</a></div>
+			<div class="user-menu__nav-item"><a href="/price/">ご利用料金</a></div>
+			<div class="user-menu__nav-item"><a href="/faq/">よくある質問</a></div>
+		</nav>
+		<nav class="user-menu__btn">
+			<div class="user-menu__btn-item"><a href="/search/"><span class="icn icn_search_b">シッターを探す</span></a></div>
+			<div class="user-menu__btn-item"><button class="js-modal" data-modal="mainHeaderLogin"><span class="icn icn_login_b">ログイン</span></button></div>
+		</nav>
+	</div>
+</header>
+<div class="modal-main" id="mainHeaderLogin">
+	<div class="modal-block">
+		<span class="modal-block__close"></span>
+		<h2 class="modal-block__ttl"><span class="icn icn_login">ログイン</span></h2>
+		<div class="modal-ct">
+			<div class="modal-login">
+				<input type="text" placeholder="メールアドレス">
+				<input type="text" placeholder="パスワード">
+				<div class="modal-login-checkbox">
+					<input type="checkbox" value="" id="modalLoginCheckbox" checked="checked">
+					<label for="modalLoginCheckbox">ログイン情報を保持する</label>
+				</div>
+				<div class="btn_area">
+					<button class="btn_style_01">ログイン</button>
+				</div>
+				<div class="modal-login_txt_01">
+					<a href="">パスワードをお忘れですか？</a>
+				</div>
+				<div class="modal-login_txt_02">
+					新規登録の方は<a href="">こちら</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
